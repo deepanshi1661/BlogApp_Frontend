@@ -1,33 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import NavBar from './components/navBar';
 import BlogList from './components/blogList';
-import NavBarBlog from './components/navBarBlog';
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Redirect } from "react-router-dom";
 import BlogDetail from './components/blogDetail';
+import EditBlog from './components/editBlog';
+import AddBlog from './components/addBlog';
 
-class App extends Component {
-  render() { 
+function App() {
     return (
-      <React.Fragment>
       <Router>
-      <switch>
-      <Route exact path="/blogDetail">
-          <BlogDetail />
-      </Route>
-      <Route exact path="/home">
-          <NavBar />
-          <main className="container">
-            <BlogList />
-          {/* <NavBarBlog /> */}
-          </main>
-      </Route>
-      </switch>
-      {/* <NavBar /> */}
+        <Routes>
+          <Route exact path="/addBlog" element={<AddBlog />} />
+          <Route exact path="/editBlog" element={<EditBlog />} />
+          <Route exact path="/blogDetail" element={<BlogDetail />} />
+          <Route exact path="/" element={[<NavBar />, <BlogList />]} />
+        </Routes>
       </Router>
-      </React.Fragment>
-    );
-  }
+  );
 }
  
 export default App;

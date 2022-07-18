@@ -1,10 +1,20 @@
 .blogList {
     margin-top: 8%;
+    margin-bottom: 4%;
 }
 
-.blogcard {
+.blogDetail {
+    margin-top: 8%;
+    margin-bottom: 3%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.blogCard {
     margin-top: 3%;
     margin-bottom: 3%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .navbar {
@@ -21,14 +31,57 @@
 }
 
 .blogtitle {
-    color:midnightblue;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style:oblique;
-    font-weight: 900;
+    color: teal;
+    font-family: initial;;
+    font-style: oblique; 
+    font-weight: 1000;
 }
 
 .blogBy {
     margin-right: 390px;
-    color:brown;
+    color: goldenrod;
     font-weight: 500;
+}
+
+.blogContentTitle {
+    color: teal;
+    font-family: cursive;
+    font-size: 280%;
+}
+
+.editTitle {
+    margin-top: 7%;
+    margin-left: 5%;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 200px;
+    color: dimgray;
+}
+
+.blogAddTitle {
+    margin-left: 5%;
+    position: fixed;
+    border-width: 1.5px;
+    border-radius: 3%;
+    line-height: 30px;
+    width: 600px;
+}
+
+.blogAddContent {
+    margin-left: 5%;
+    position: fixed;
+    border-width: 1.5px;
+    border-radius: 3%;
+    line-height: 40px;
+    width: 1150px;
+}
+
+.saveChanges {
+    margin-top: 80px;
+    margin-left: 4.8%;
+}
+
+.delete {
+    margin-top: 80px;
+    margin-left: 1%;
 }
